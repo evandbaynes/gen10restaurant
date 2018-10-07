@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Bestaurant Website</title>
+</head>
+<link rel="stylesheet" 
+      type="text/css"
+      href="restaurantStyles.css" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+ 	
+<style>
+body {background-color: coral;}
+</style>
+
+
+<body>
+	
+
+ 
+	<header>
+		Contact Us
+		<hr />
+	</header>
+
+	<main>
+		
+		<h1><center><font face="comic sans ms">The Bestaurant</font>
+		</h1>
+		<hr />
+
+
+		<ul class="nav nav-pills nav-justified">
+		  <li>
+		  	<a href="restaurant.html"><i class="glyphicon glyphicon-home">
+		  	
+		  	</i> Home</a></li>
+		  <li><a href="menu.html">Menu</a></li>
+		  <li class="active"><a href="contact.html">Contact Us</a></li>
+		 </ul>
+<!------------------------------------------
+ redesign after implementing the tabs/pills requirment
+
+		<nav><center>
+			<a href="">Home</a> 
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			<a href="menu.html">Menu</a> 
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			<a href="contact.html">Contact Us</a>
+			<hr/>
+		</nav>
+----------------------------------------------->
+ <script type="text/javascript">
+            	function ValidateForm(){
+            		var w = document.forms["inquiry"]["Name"].value;
+            		var x = document.forms["inquiry"]["Email"].value;
+            		var y = document.forms["inquiry"]["Phone"].value;
+            		var z = document.forms["inquiry"]["Reason"].value;
+			    	if (w == "") {
+			        	alert("Name must be filled out");}
+			        else if (x == ""){
+			        	alert("Email must be filled out");}
+			        else if (y == ""){
+			        	alert("Phone must be filled out");}
+			        else if (z == ""){
+						alert("Reason must be filled out");}	
+					else {alert("you have entered valid input");}
+}
+			        
+            </script>
+
+		<section><center>
+			<form name="inquiry" method="POST">
+            
+            <b>Name</b> <input type="text" name="Name" /><p>
+            <b>Email</b> <input type="text" name="Email" /><p>
+            <b>Phone</b> <input type="text" name="Phone" /><p>
+            <b>Reason for Inquiry</b> <select name="Reason">
+            
+                <option value="Catering">Catering</option>
+                <option value="Private Party">Private Party</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Other">Other</option>
+
+            </select><p>
+            Additional Information <textarea name="Additional Information"></textarea>
+            <p>
+
+
+            Have you been to the resaurant? <br />
+            <input type="radio" name="answer" value="YES" />Yes
+            <input type="radio" name="answer" value="NO" />No
+            <p>
+
+
+            Best day to contact you? 
+            <input type="checkbox" name="Monday" value="Monday" />Monday
+            <input type="checkbox" name="Tuesday" value="Tuesday" />Tuesday
+            <input type="checkbox" name="Wednesday" value="Wednesday" />Wednesday
+            <input type="checkbox" name="Thursday" value="Thursday" />Thursday
+            <input type="checkbox" name="Friday" value="Friday" />Friday
+            <input type="checkbox" name="Saturday" value="Saturday" />Saturday
+            <input type="checkbox" name="Sunday" value="Sunday" />Sunday
+            <p>
+
+
+           
+            
+           Submit Request <input type="submit" onclick="ValidateForm()"/>
+           <p>
+           	<b>Bolded</b> fields are required<p>
+           Reset Form <input type="reset"/>
+            <p>
+
+        </form>
+
+		</section>
+
+
+		<hr />
+	</main>
+
+	<footer><center>
+			1234 Imaginary Street, Pleasant City, Hawaii, 96703
+			<br /> 
+			Telephone: (123)456-7890
+		</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+
+
+</body>
+</html>
